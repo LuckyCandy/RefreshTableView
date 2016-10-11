@@ -13,6 +13,13 @@ let DRefreshViewHeight:CGFloat = 200
 class DRTableViewController: UITableViewController,RefreshViewDelegate {
     fileprivate var refreshView:RefreshView!
     
+    override init(style: UITableViewStyle) {
+        super.init(style: .plain)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,24 +31,13 @@ class DRTableViewController: UITableViewController,RefreshViewDelegate {
     
     //监听用户滑动
     override func scrollViewDidScroll( _ scrollView: UIScrollView) {
-        refreshView.scrollViewDidScroll(scrollView);
+        refreshView.scrollViewDidScroll(scrollView)
     }
     
     override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         refreshView.scrollViewWillEndDragging(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
-    }
-    
-    
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseCell", for: indexPath)
-        cell.textLabel!.text = "第\((indexPath as NSIndexPath).row)行"
-        return cell
-    }
     
     //RefreshViewDelegate Mark
     func refreshViewStartLoading(refreshView: RefreshView) {
