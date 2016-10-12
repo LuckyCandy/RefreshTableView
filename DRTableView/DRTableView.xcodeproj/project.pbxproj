@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49065D74A0B8D0D1A02B1A65 /* Pods_DRTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790602C3CFDEFB91D3F26644 /* Pods_DRTableView.framework */; };
+		F00683651DADECE6003DF0D4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00683641DADECE6003DF0D4 /* Alamofire.framework */; };
+		F00683681DAE0764003DF0D4 /* SongDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00683671DAE0764003DF0D4 /* SongDetail.swift */; };
+		F006836A1DAE1233003DF0D4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00683691DAE1233003DF0D4 /* SwiftyJSON.framework */; };
 		F0AB46D71DAC99A300F29DA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB46D61DAC99A300F29DA2 /* ViewController.swift */; };
-		F0AB46D91DACB31100F29DA2 /* DRTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB46D81DACB31100F29DA2 /* DRTableView.swift */; };
 		F0AD31591D81058D0071F1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD31581D81058D0071F1F6 /* AppDelegate.swift */; };
 		F0AD315E1D81058D0071F1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AD315C1D81058D0071F1F6 /* Main.storyboard */; };
 		F0AD31601D81058D0071F1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AD315F1D81058D0071F1F6 /* Assets.xcassets */; };
@@ -18,8 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1719A060BBBB04711377E74C /* Pods-DRTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRTableView/Pods-DRTableView.release.xcconfig"; sourceTree = "<group>"; };
+		790602C3CFDEFB91D3F26644 /* Pods_DRTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00683641DADECE6003DF0D4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/DRTableView-dlenbqsdruowbfayfwekbpfxflll/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		F00683671DAE0764003DF0D4 /* SongDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDetail.swift; sourceTree = "<group>"; };
+		F00683691DAE1233003DF0D4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/DRTableView-dlenbqsdruowbfayfwekbpfxflll/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		F0AB46D61DAC99A300F29DA2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F0AB46D81DACB31100F29DA2 /* DRTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRTableView.swift; sourceTree = "<group>"; };
 		F0AD31551D81058D0071F1F6 /* DRTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AD31581D81058D0071F1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0AD315D1D81058D0071F1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,6 +35,7 @@
 		F0AD31641D81058D0071F1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0AD316D1D8109910071F1F6 /* DRTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRTableViewController.swift; sourceTree = "<group>"; };
 		F0AD31701D81137A0071F1F6 /* RefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
+		F10F5ABE001B0E9DBDC417D2 /* Pods-DRTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRTableView/Pods-DRTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F006836A1DAE1233003DF0D4 /* SwiftyJSON.framework in Frameworks */,
+				F00683651DADECE6003DF0D4 /* Alamofire.framework in Frameworks */,
+				49065D74A0B8D0D1A02B1A65 /* Pods_DRTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CF246C4F9971539525A73EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F00683691DAE1233003DF0D4 /* SwiftyJSON.framework */,
+				F00683641DADECE6003DF0D4 /* Alamofire.framework */,
+				790602C3CFDEFB91D3F26644 /* Pods_DRTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F00683661DAE0737003DF0D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F00683671DAE0764003DF0D4 /* SongDetail.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		F0AD314C1D81058D0071F1F6 = {
 			isa = PBXGroup;
 			children = (
 				F0AD31571D81058D0071F1F6 /* DRTableView */,
 				F0AD31561D81058D0071F1F6 /* Products */,
+				F379B0E690C2E270B0BB7BB6 /* Pods */,
+				3CF246C4F9971539525A73EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +91,7 @@
 		F0AD31571D81058D0071F1F6 /* DRTableView */ = {
 			isa = PBXGroup;
 			children = (
+				F00683661DAE0737003DF0D4 /* Model */,
 				F0AD316A1D8106040071F1F6 /* DRTableView */,
 				F0AD31581D81058D0071F1F6 /* AppDelegate.swift */,
 				F0AD315C1D81058D0071F1F6 /* Main.storyboard */,
@@ -76,7 +108,6 @@
 			children = (
 				F0AD316F1D810C760071F1F6 /* RefreshView */,
 				F0AD316D1D8109910071F1F6 /* DRTableViewController.swift */,
-				F0AB46D81DACB31100F29DA2 /* DRTableView.swift */,
 			);
 			name = DRTableView;
 			sourceTree = "<group>";
@@ -89,6 +120,15 @@
 			name = RefreshView;
 			sourceTree = "<group>";
 		};
+		F379B0E690C2E270B0BB7BB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F10F5ABE001B0E9DBDC417D2 /* Pods-DRTableView.debug.xcconfig */,
+				1719A060BBBB04711377E74C /* Pods-DRTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0AD31671D81058D0071F1F6 /* Build configuration list for PBXNativeTarget "DRTableView" */;
 			buildPhases = (
+				0D3115A22F0801A31824CAFB /* [CP] Check Pods Manifest.lock */,
 				F0AD31511D81058D0071F1F6 /* Sources */,
 				F0AD31521D81058D0071F1F6 /* Frameworks */,
 				F0AD31531D81058D0071F1F6 /* Resources */,
+				9C16E64588DA12FFDA18627B /* [CP] Embed Pods Frameworks */,
+				A241B9198835049382B1D9C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,15 +199,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D3115A22F0801A31824CAFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C16E64588DA12FFDA18627B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRTableView/Pods-DRTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A241B9198835049382B1D9C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRTableView/Pods-DRTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0AD31511D81058D0071F1F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00683681DAE0764003DF0D4 /* SongDetail.swift in Sources */,
 				F0AD316E1D8109910071F1F6 /* DRTableViewController.swift in Sources */,
 				F0AD31711D81137A0071F1F6 /* RefreshView.swift in Sources */,
 				F0AB46D71DAC99A300F29DA2 /* ViewController.swift in Sources */,
-				F0AB46D91DACB31100F29DA2 /* DRTableView.swift in Sources */,
 				F0AD31591D81058D0071F1F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +372,9 @@
 		};
 		F0AD31681D81058D0071F1F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10F5ABE001B0E9DBDC417D2 /* Pods-DRTableView.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DRTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -293,7 +386,9 @@
 		};
 		F0AD31691D81058D0071F1F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1719A060BBBB04711377E74C /* Pods-DRTableView.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DRTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

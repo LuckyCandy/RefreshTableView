@@ -10,8 +10,14 @@ import UIKit
 
 let DRefreshViewHeight:CGFloat = 200
 
+protocol DRTableViewControllerDelegate {
+    func startRefresh()
+}
+
 class DRTableViewController: UITableViewController,RefreshViewDelegate {
     fileprivate var refreshView:RefreshView!
+    
+    var drDelegate:DRTableViewControllerDelegate?
     
     override init(style: UITableViewStyle) {
         super.init(style: .plain)
@@ -41,13 +47,12 @@ class DRTableViewController: UITableViewController,RefreshViewDelegate {
     
     //RefreshViewDelegate Mark
     func refreshViewStartLoading(refreshView: RefreshView) {
-        DispatchQueue.global().async {
-            sleep(3)
-            DispatchQueue.main.async(execute: {
-                refreshView.endLoading()
-            })
-        }
-        
+        drDelegate?.startRefresh()
+    }
+    
+    func endRefresh(){
+        print("加载结束")
+        refreshView.endLoading()
     }
 
 }
