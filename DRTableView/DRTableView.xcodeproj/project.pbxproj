@@ -62,14 +62,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F00683661DAE0737003DF0D4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F00683671DAE0764003DF0D4 /* SongDetail.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		F0AD314C1D81058D0071F1F6 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +83,6 @@
 		F0AD31571D81058D0071F1F6 /* DRTableView */ = {
 			isa = PBXGroup;
 			children = (
-				F00683661DAE0737003DF0D4 /* Model */,
 				F0AD316A1D8106040071F1F6 /* DRTableView */,
 				F0AD31581D81058D0071F1F6 /* AppDelegate.swift */,
 				F0AD315C1D81058D0071F1F6 /* Main.storyboard */,
@@ -107,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				F0AD316F1D810C760071F1F6 /* RefreshView */,
-				F0AD316D1D8109910071F1F6 /* DRTableViewController.swift */,
 			);
 			name = DRTableView;
 			sourceTree = "<group>";
@@ -115,6 +105,8 @@
 		F0AD316F1D810C760071F1F6 /* RefreshView */ = {
 			isa = PBXGroup;
 			children = (
+				F00683671DAE0764003DF0D4 /* SongDetail.swift */,
+				F0AD316D1D8109910071F1F6 /* DRTableViewController.swift */,
 				F0AD31701D81137A0071F1F6 /* RefreshView.swift */,
 			);
 			name = RefreshView;

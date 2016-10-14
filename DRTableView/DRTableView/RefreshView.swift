@@ -27,6 +27,14 @@ class RefreshView: UIView , UIScrollViewDelegate{
     
     private var isLoading:Bool = false       //是否正在加载网络数据
     
+    private var viewCenter:CGPoint{
+        get{
+            let centerX = self.bounds.origin.x + (self.bounds.width / 2)
+            let centerY = self.bounds.origin.y + (self.bounds.height / 2)
+            return CGPoint(x: centerX, y: centerY)
+        }
+    }
+    
     var delegate:RefreshViewDelegate?
     
     init(frame: CGRect,scrollView:UIScrollView) {
@@ -67,12 +75,12 @@ class RefreshView: UIView , UIScrollViewDelegate{
     private func initRefreshItems(){
         tipArrow = UIImageView(frame: CGRect(x: 30, y: 150, width: 30, height: 30))
         tipArrow.image = UIImage(named: "pullArrow");
-        tipLabel = UILabel(frame: CGRect(x: 60, y: 150, width: 200, height: 15))
+        tipLabel = UILabel(frame: CGRect(x: viewCenter.x-100, y: 150, width: 200, height: 15))
         tipLabel.font = UIFont.systemFont(ofSize: 14.0)
         tipLabel.text = "下拉刷新"
         tipLabel.font = UIFont.systemFont(ofSize: 12)
         tipLabel.textAlignment = .center
-        timeLabel = UILabel(frame: CGRect(x: 60, y: 175, width: 200, height: 15))
+        timeLabel = UILabel(frame: CGRect(x: viewCenter.x-100, y: 175, width: 200, height: 15))
         timeLabel.font = UIFont.systemFont(ofSize: 14.0)
         timeLabel.text = "上次更新时间: 暂无"
         timeLabel.textColor = UIColor.gray
